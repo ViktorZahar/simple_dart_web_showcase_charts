@@ -1,0 +1,23 @@
+@import "packages/simple_dart_web_widgets/styles/system_style.css";
+@import "packages/simple_dart_web_widgets/styles/blue_theme.css";
+@import "packages/simple_dart_web_views/styles/blue_theme.css";
+
+
+body {
+    font-family: Source Sans Pro, serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ExamplePanel {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.PanelProps {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.DialogExample {
+    background: black;
+}

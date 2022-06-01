@@ -1,0 +1,28 @@
+
+.SimpleNavBar {
+    width: 150px;
+    background: #000;
+    color: white;
+    padding: 5px;
+}
+
+.SimpleNavBarButton {
+    background: #000;
+    color:white;
+    text-decoration: none;
+}
+
+.SimpleNavBarButton.Active {
+    background: #444;
+}
+
+.SimplePathPanel{
+    background: #000;
+    color:  #fff;
+    padding: 2px;
+}
+
+.SimplePathButton{
+    color:  #fff;
+    text-decoration: none;
+}
