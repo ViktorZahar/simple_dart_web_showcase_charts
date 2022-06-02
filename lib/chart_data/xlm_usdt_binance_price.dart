@@ -4,13 +4,13 @@ import 'package:simple_dart_web_charts/chart.dart';
 
 
 // Example of data with timeStep =1h
-List<DataRow> xlmUsdtBinancePriceData() {
-  final res = <DataRow>[];
+List<LineRow> xlmUsdtBinancePriceData() {
+  final res = <LineRow>[];
   final binancePrices = json.decode(xlmUsdtBinancePriceJson);
   for (final bp in binancePrices) {
     final d = DateTime.fromMillisecondsSinceEpoch(bp[0]);
     final price = double.parse(bp[4]);
-    res.add(DataRow(d, price));
+    res.add(LineRow(d, price));
   }
   return res;
 }

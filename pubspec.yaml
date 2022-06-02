@@ -1,6 +1,6 @@
 name: simple_dart_web_showcase_charts
 description: simple dart web showcase for charts
-version: 0.0.4
+version: 0.0.1
 publish_to: none
 
 platforms:

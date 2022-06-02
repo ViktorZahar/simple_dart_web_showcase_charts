@@ -1,4 +1,3 @@
-import 'package:simple_dart_web_charts/chart.dart';
 import 'package:simple_dart_web_widgets/chart_widget.dart';
 import 'package:simple_dart_web_widgets/labels/simple_label.dart';
 import 'package:simple_dart_web_widgets/panel.dart';
@@ -12,8 +11,6 @@ class ChartWidgetPanel extends PanelComponent {
   }
 
   late ChartWidget chartWidget;
-
-  Chart get chart => chartWidget.chart;
 
   SimpleLabel headerLabel = SimpleLabel()..addCssClass('HeaderLabel');
 

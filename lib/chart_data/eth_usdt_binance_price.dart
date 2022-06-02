@@ -3,13 +3,13 @@ import 'dart:convert';
 import 'package:simple_dart_web_charts/chart.dart';
 
 // Example of data with timeStep =15m
-List<DataRow> ethUsdtBinancePriceData() {
-  final res = <DataRow>[];
+List<LineRow> ethUsdtBinancePriceData() {
+  final res = <LineRow>[];
   final binancePrices = json.decode(ethUsdtBinancePriceJson);
   for (final bp in binancePrices) {
     final d = DateTime.fromMillisecondsSinceEpoch(bp[0]);
     final price = double.parse(bp[4]);
-    res.add(DataRow(d, price));
+    res.add(LineRow(d, price));
   }
   return res;
 }

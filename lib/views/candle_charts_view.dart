@@ -33,11 +33,14 @@ class CandleChartsView extends View {
       ..caption = 'XRP_USDT binance price'
       ..fullWidth()
       ..height = '300px';
-    addWithWaiting(xlmUsdtPricePanel).then((value) => xlmUsdtPricePanel.chart
+    addWithWaiting(xlmUsdtPricePanel).then((value) => xlmUsdtPricePanel
+        .chartWidget
         .renderCandleChart(xlmUsdtBinancePriceCandles()));
-    addWithWaiting(ethUsdtPricePanel).then((value) => ethUsdtPricePanel.chart
+    addWithWaiting(ethUsdtPricePanel).then((value) => ethUsdtPricePanel
+        .chartWidget
         .renderCandleChart(ethUsdtBinancePriceCandles()));
-    addWithWaiting(xrpUsdtPricePanel).then((value) => xrpUsdtPricePanel.chart
+    addWithWaiting(xrpUsdtPricePanel).then((value) => xrpUsdtPricePanel
+        .chartWidget
         .renderCandleChart(xrpUsdtBinancePriceCandles()));
   }
 }

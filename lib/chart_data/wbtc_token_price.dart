@@ -5,12 +5,12 @@ import 'package:simple_dart_web_charts/chart.dart';
 import 'coin_info.dart';
 
 // Example of data with timeStep =1d and big values
-List<DataRow> wbtcTokenPriceData() {
-  final res = <DataRow>[];
+List<LineRow> wbtcTokenPriceData() {
+  final res = <LineRow>[];
   final coinInfoRawJson = json.decode(wbtcTokenCoinInfoJson);
   final coinInfo = CoinInfo.fromJson(coinInfoRawJson);
   coinInfo.price!.prices.forEach((key, value) {
-    res.add(DataRow(DateTime.parse(key), value));
+    res.add(LineRow(DateTime.parse(key), value));
   });
   return res;
 }

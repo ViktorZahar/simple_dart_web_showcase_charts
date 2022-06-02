@@ -44,15 +44,19 @@ class LineChartsView extends View {
       ..caption = 'XLM_USDT binance price'
       ..fullWidth()
       ..height = '300px';
-    addWithWaiting(teslaTokenPricePanel).then((value) =>
-        teslaTokenPricePanel.chart.renderLineChart(teslaTokenPriceData()));
-    addWithWaiting(wbtcPricePanel).then(
-        (value) => wbtcPricePanel.chart.renderLineChart(wbtcTokenPriceData()));
-    addWithWaiting(xrpUsdtPricePanel).then((value) =>
-        xrpUsdtPricePanel.chart.renderLineChart(xrpUsdtBinancePriceData()));
-    addWithWaiting(ethUsdtPricePanel).then((value) =>
-        ethUsdtPricePanel.chart.renderLineChart(ethUsdtBinancePriceData()));
-    addWithWaiting(xlmUsdtPricePanel).then((value) =>
-        xlmUsdtPricePanel.chart.renderLineChart(xlmUsdtBinancePriceData()));
+    addWithWaiting(teslaTokenPricePanel).then((value) => teslaTokenPricePanel
+        .chartWidget
+        .renderLineChart(teslaTokenPriceData()));
+    addWithWaiting(wbtcPricePanel).then((value) =>
+        wbtcPricePanel.chartWidget.renderLineChart(wbtcTokenPriceData()));
+    addWithWaiting(xrpUsdtPricePanel).then((value) => xrpUsdtPricePanel
+        .chartWidget
+        .renderLineChart(xrpUsdtBinancePriceData()));
+    addWithWaiting(ethUsdtPricePanel).then((value) => ethUsdtPricePanel
+        .chartWidget
+        .renderLineChart(ethUsdtBinancePriceData()));
+    addWithWaiting(xlmUsdtPricePanel).then((value) => xlmUsdtPricePanel
+        .chartWidget
+        .renderLineChart(xlmUsdtBinancePriceData()));
   }
 }

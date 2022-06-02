@@ -23,18 +23,18 @@ class BinanceChartView extends View {
   @override
   void afterShow() {
     clear();
-    chartPanel.chart.clear();
-    addWithWaiting(chartPanel).then(
-        (value) => chartPanel.chart.renderCandleChart(dataFromTextField()));
+    chartPanel.chartWidget.clear();
+    addWithWaiting(chartPanel).then((value) =>
+        chartPanel.chartWidget.renderCandleChart(dataFromTextField()));
     addAll([captionLabel, chartDataTextArea]);
     chartDataTextArea.onValueChange.listen((event) {
       try {
         final data = dataFromTextField();
-        chartPanel.chart.clear();
-        chartPanel.chart.renderCandleChart(data);
+        chartPanel.chartWidget.clear();
+        chartPanel.chartWidget.renderCandleChart(data);
       } catch (e) {
         chartPanel.caption = 'Error data format';
-        chartPanel.chart.clear();
+        chartPanel.chartWidget.clear();
       }
     });
   }
