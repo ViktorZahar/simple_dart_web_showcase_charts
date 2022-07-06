@@ -1,0 +1,26 @@
+@import "packages/simple_dart_web_widgets/styles/system_style.css";
+@import "packages/simple_dart_web_widgets/styles/dark_theme.css";
+@import "packages/simple_dart_web_views/styles/dark_theme.css";
+
+body {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.SimplePathPanel > .SimpleLabel {
+  color: inherit;
+}
+
+.ExamplePanel {
+    border: 1px solid black;
+}
+
+.PanelProps {
+    border: 1px solid black;
+}
+
+
+.HeaderLabel {
+  font-size: 16px;
+  font-weight: bold;
+}

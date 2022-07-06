@@ -14,9 +14,9 @@ class BinanceChartView extends View {
     id = 'binance_chart';
     caption = 'Binance Chart';
     fillContent = true;
-    padding = '1px';
+    padding = '10px';
     vertical = true;
-    stride = '1px';
+    stride = '5px';
     scrollable = true;
   }
 

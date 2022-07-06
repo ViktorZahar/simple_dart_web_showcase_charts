@@ -6,7 +6,11 @@ class ChartWidgetPanel extends PanelComponent {
   ChartWidgetPanel() : super('ChartWidgetPanel') {
     vertical = true;
     stride = '2px';
-    chartWidget = ChartWidget()..styleFromTheme = true;
+    padding = '10px';
+    chartWidget = ChartWidget()
+      ..styleFromTheme = true
+      ..fullSize()
+      ..fillContent = true;
     addAll([headerLabel, chartWidget]);
   }
 

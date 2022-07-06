@@ -8,13 +8,9 @@ import 'views/line_charts_view.dart';
 MainWindowWithNavPathTheme mainWindow = MainWindowWithNavPathTheme();
 
 void start() {
-  final homeView = HomeView();
-  mainWindow
-    ..registerViews([
-      homeView,
-      LineChartsView(),
-      CandleChartsView(),
-      BinanceChartView(),
-    ])
-    ..init(homeView);
+  mainWindow.init(HomeView(), [
+    LineChartsView(),
+    CandleChartsView(),
+    BinanceChartView(),
+  ]);
 }
